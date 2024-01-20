@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SBIM website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav {
+            background-color: #161b22;
+            color: #58a6ff;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+        }
+        nav li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav a {
+            color: #58a6ff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav a:hover, nav a:focus {
+            color: #1f6feb;
+        }
+        main {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            background: #0d1117;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .accordion {
+            background-color: #21262d;
+            color: #58a6ff;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: 0.4s;
+            border-radius: 4px;
+            margin-top: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        .active, .accordion:hover {
+            background-color: #30363d;
+        }
+        .panel {
+            padding: 0 18px;
+            background-color: #0d1117;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            border-radius: 4px;
+        }
+        .panel img {
+            max-width: 100%;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+        h2 {
+            font-size: 24px;
+            color: #58a6ff;
+        }
+        p, li {
+            line-height: 1.6;
+            color: #c9d1d9;
+        }
+        footer {
+            background-color: #161b22;
+            color: #58a6ff;
+            text-align: center;
+            padding: 10px;
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #58a6ff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer a:hover, footer a:focus {
+            color: #1f6feb;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>SBIM Rapport</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#inleiding">Inleiding</a></li>
+            <li><a href="#smart-building-digital-twin">Smart Building & Digital Twin</a></li>
+            <li><a href="#case-study">Case Study</a></li>
+            <li><a href="#conclusie">Conclusie</a></li>
+            <li><a href="#meer-info">Meer Informatie</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <!-- Inleiding Section -->
+        <button class="accordion">Inleiding</button>
+        <div class="panel">
+            <p>De inleiding van het essay introduceert de thema's Smart Building en Digital Twin binnen de context van de Haagse Hogeschool. Het bespreekt hoe deze technologieën kunnen bijdragen aan een efficiëntere en effectievere gebouwbeheer, met speciale aandacht voor de evacuatie van mindervaliden tijdens calamiteiten. Het essay verkent de definitie van Smart Buildings en Digital Twins en hun relevantie voor de overgang naar datagestuurde en adaptieve gebouwomgevingen.</p>
+        </div>
+        
+        <!-- Smart Building & Digital Twin Section -->
+        <button class="accordion">Smart Building & Digital Twin</button>
+        <div class="panel">
+            <p>Het hoofdstuk "Smart Building & Digital Twin" in het essay verkent de betekenis en toepassing van deze concepten in de context van de Haagse Hogeschool. Het beschrijft Smart Buildings als geïntegreerde systemen die intelligente gebouwtechnologieën en infrastructuren combineren, gericht op het verbeteren van gebruikservaring, efficiëntie, veiligheid en beheer. Er wordt verwezen naar twee onderzoeken die verschillende definities en aspecten van Smart Buildings belichten, zoals intelligentie, enterprise, materialen, ontwerp en gebouwcontrole. Vervolgens wordt de rol van Digital Twins onderzocht, waarbij deze worden beschreven als digitale replica's die real-time data gebruiken om gebouwfuncties te optimaliseren en een zelfsturende entiteit te creëren. De combinatie van deze technologieën belooft een aanzienlijke verbetering in gebouwbeheer en duurzaamheid.</p>
+        </div>
+        
+        <!-- Case Study Section -->
+        <button class="accordion">Case Study</button>
+        <div class="panel">
+            <p>Het "Case Study"-gedeelte van het essay biedt een grondige evaluatie van de huidige veiligheidsprocedures in het Haagse Hogeschool hoofdgebouw, met specifieke focus op de veiligheid van mindervalide personen tijdens calamiteiten. Gebaseerd op inzichten verkregen uit een interview met een veiligheidsadviseur, worden de huidige uitdagingen, waaronder de identificatie en evacuatie van mindervalide personen, onder de loep genomen. Er wordt geconcludeerd dat het huidige systeem tekortschiet in het efficiënt lokaliseren van deze individuen tijdens noodgevallen. Als oplossing wordt het Smart Building Locatie Tracking Systeem (SBLTS) voorgesteld, dat real-time locatie-informatie biedt door de integratie van wifi-access points en brandinstallaties. Dit innovatieve systeem zou niet alleen de veiligheid verhogen, maar ook de algemene efficiëntie van evacuatieprocessen verbeteren. Het onderzoek benadrukt echter ook het belang van verdere ontwikkeling en evaluatie van SBLTS, met speciale aandacht voor privacykwesties en integratie met de bestaande infrastructuur.</p>
+            <!-- Afbeeldingen uit het case study document toevoegen zodra ze beschikbaar zijn -->
+            <!-- <img src="path-to-your-image.jpg" alt="Description of image"> -->
+        </div>
+        
+        <!-- Conclusie Section -->
+        <button class="accordion">Conclusie</button>
+        <div class="panel">
+            <p>De conclusie van het essay benadrukt dat de integratie van het Smart Building Locatie Tracking Systeem (SBLTS) in het Haagse Hogeschool hoofdgebouw goed aansluit bij de gedefinieerde visie van een Smart Building. Dit systeem verbetert de respons op noodsituaties door real-time locatiedata te verstrekken, vooral voor personen die niet zelfstandig kunnen evacueren. De effectiviteit van SBLTS als veiligheidsmaatregel toont aan hoe slimme technologieën kunnen bijdragen aan een veiliger, efficiënter en meer responsief gebouw. De noodzaak van verdere ontwikkeling en onderzoek wordt benadrukt, met name met betrekking tot technische haalbaarheid, privacyaspecten en integratie met bestaande systemen, om ervoor te zorgen dat het systeem voldoet aan de adaptieve, proactieve en veiligheidsoptimaliserende doelstellingen van een Smart Building.</p>
+        </div>
+        
+        <!-- Meer Informatie Section -->
+        <button class="accordion">Meer Informatie</button>
+        <div class="panel">
+            <p>[Meer informatie tekst...]</p>
+        </div>
+    </main>
+
+    <footer class="container">
+        <small>
+            <a href="#">Privacybeleid</a> • <a href="#">Contact</a>
+        </small>
+    </footer>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            });
+        }
+    </script>
+</body>
+</html>
+
